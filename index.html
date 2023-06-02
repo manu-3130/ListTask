@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>PRACTICA ANDRES</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    #header {
+        background: url(./bg-desktop-dark.jpg);
+        height: 300px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    h1 {
+        color: white;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    
+    p{
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .d-flex button {
+        background: transparent;
+        border: 0px;
+        font-size: 30px;
+    }
+
+    button i {
+        color: white;
+    }
+
+    .cajita {
+        background-color: beige;
+    }
+
+    .d-flex {
+        display: flex;
+        padding-top: 50px;
+        justify-content: space-around;
+    }
+
+    .top{
+        margin-top: 17px;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        margin-top: -80px;
+        gap: 10px;
+    }
+
+    input {
+        width: 550px;
+        padding: 10px;
+        background-color: hsl(235, 24%, 19%);
+        border: 1px solid hsl(235, 24%, 19%);
+        color: white;
+    }
+
+    input ::placeholder {
+        color: white;
+    }
+
+    .position {
+        position: absolute;
+    }
+
+
+    .cajita {
+        width: 626px;
+        padding: 10px;
+        background-color: hsl(235, 24%, 19%);
+        border: 1px solid hsl(237, 22%, 17%);
+        margin: 0px 17.7%;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .caja {
+        width: 626px;
+        padding: 10px;
+        background-color: hsl(235, 24%, 19%);
+        border: 1px solid hsl(237, 22%, 17%);
+        margin: 0px 20.5%;
+        color: rgb(148, 148, 148);
+        display: flex;
+        align-items: center;
+    }
+
+    .cajita button {
+        background: transparent;
+        border: 0px;
+        font-size: 20px;
+        color: gray;
+        cursor: pointer;
+    }
+
+    .display {
+        display: flex;
+        align-items: center;
+    }
+
+    .caja button {
+        background: transparent;
+        border: 0px;
+        font-size: 20px;
+        color: gray;
+        cursor: pointer;
+    }
+
+    .tachar{
+        text-decoration: line-through;
+        color: gray;
+    }
+
+    .bi-brightness-high{
+        display: flex;
+    }
+
+    .bi-moon-fill{
+        display: none;
+    }
+
+    #enviar{
+        color: white;
+        background-color: hsl(235, 24%, 19%);
+        border: 0px;
+    }
+</style>
+
+<body style="background: hsl(235, 21%, 11%);">
+    <header id="header">
+        <div class="container d-flex">
+            <h1>
+                TODO
+            </h1>
+
+            <button id="cambiar" onclick="lightblack()">
+                <i id="bi-brightness-high" class="bi bi-brightness-high"></i>
+                <i id="bi-moon-fill" class="bi bi-moon-fill"></i>
+            </button>
+        </div>
+
+    </header>
+
+    <div class="container">
+        <form id="formulario" action="">
+            <input id="input" type="text" placeholder="Escribe la tarea">
+            <button id="enviar" type="submit">ENVIAR</button>
+        </form>
+
+
+        <ul class="top">
+            <li class="caja align">
+                <button>
+                    <i class="bi bi-check2-circle"></i>
+                </button>
+                <p class="tachar">Complete online JavaScript course </p>
+            </li>
+
+            <ul id="box">
+
+            </ul>
+        </ul>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
